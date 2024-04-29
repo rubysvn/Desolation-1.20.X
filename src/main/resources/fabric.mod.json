@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "desolation",
+	"version": "${version}",
+	"name": "Ruby's Desolation",
+	"description": "A modification to the End dimension.",
+	"authors": [
+		"rubysvn"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/desolation/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.rubysvn.desolation.RubysDesolation"
+		],
+		"fabric-datagen": [
+			"net.rubysvn.desolation.RubysDesolationDataGenerator"
+		],
+		"client": [
+			"net.rubysvn.desolation.RubysDesolationClient"
+		]
+	},
+	"mixins": [
+		"desolation.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
